@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 處理圖檔 */
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*先寫PC版型*/
+body {
+  line-height: 1.8;
+  font-family: Tahoma;
+}
+body h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+body h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+body h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+body p, body date, body mark {
+  font-size: 16px;
+}
+body nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body nav ul li a {
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+}
+body nav ul li a:hover {
+  color: blue;
+  border-bottom: 3px blue solid;
+  text-decoration: none;
+}
+body header {
+  display: flex;
+  position: relative;
+}
+body header img {
+  max-width: 50%;
+}
+body header .right {
+  position: relative;
+  width: 50%;
+  padding-left: 20px;
+  justify-content: center;
+  align-content: center;
+  color: blue;
+  z-index: 1;
+}
+body header .float {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  float: right;
+  padding: 50px 50px 25px 25px;
+  border: black 3px solid;
+  background: white;
+  z-index: 2;
+}
+body header .float ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+body header .float ul li a {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+body header .float ul li a:hover {
+  border: 1px blue solid;
+}
+body main .services {
+  display: block;
+  position: relative;
+}
+body main .services .service {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main .services .service img {
+  position: relative;
+  max-width: 40%;
+}
+body main .services .service .textbox {
+  max-width: 40%;
+  left: 28%;
+  float: right;
+  position: absolute;
+  border: black 3px solid;
+  background: white;
+}
+body main .services .more {
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+body main .services .more button {
+  border: 1px solid black;
+  background: white;
+  border-radius: 50%;
+  max-width: 5%;
+}
+body main .services .more button:hover {
+  background: rgb(128, 128, 255);
+}
+body main .blogs {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+body main .blogs .btn_dir {
+  background: rgb(0, 0, 255);
+  color: white;
+  border-radius: 50%;
+  max-width: 8%;
+  height: 24px;
+}
+body main .blogs .btn_dir:hover {
+  background: rgb(128, 128, 255);
+}
+body main .blogs .box {
+  padding: 10px;
+  max-width: 28%;
+}
+body main .blogs .box .mark .btn_highlight .blog_highlight {
+  border-radius: 10px;
+  border-color: blue;
+  background: blue;
+  color: white;
+}
+body main .blogs .box img {
+  text-align: center;
+}
+body main .blogs .box .btn_more {
+  border: black 2px solid;
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+body main .blogs .box .btn_more:hover {
+  background: rgb(128, 128, 255);
+}
+body main .pic_textbox {
+  position: absolute;
+  max-width: 100%;
+  height: 532.49px;
+  padding: 10px;
+}
+body main .pic_textbox .pic {
+  max-width: 50%;
+  height: 532.49px;
+  position: relative;
+  z-index: 1;
+}
+body main .pic_textbox .textbox1 {
+  padding: 20px;
+  border: 3px black solid;
+  position: relative;
+  top: -500px;
+  left: 40%;
+  background: white;
+  z-index: 2;
+  max-width: 50%;
+}
+body main .pic_textbox .textbox1 p span {
+  color: blue;
+}
+body main .pic_textbox .textbox2 {
+  padding: 20px;
+  border: 3px black solid;
+  background: white;
+  position: relative;
+  top: -300px;
+  left: 40%;
+  z-index: 3;
+  max-width: 50%;
+}
+body main .pic_textbox .textbox2 button {
+  border: blue 2px solid;
+  background: white;
+  color: blue;
+  padding: 10px;
+  border-radius: 20px;
+}
+body main .pic_textbox .textbox2 button:hover {
+  background: rgb(128, 128, 255);
+}
+
+/* 手機板型 *//*# sourceMappingURL=all.css.map */

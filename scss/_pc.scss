@@ -1,0 +1,216 @@
+/*先寫PC版型*/
+body{
+    line-height: 1.8;
+    font-family: Tahoma;
+    h1{
+        font-size: $base-font*3;
+        font-weight: bold;
+        
+    }
+    h2{
+        font-size: $base-font*2.5;
+        font-weight: bold; 
+    }
+    h3{
+        font-size: $base-font*2;
+        font-weight: bold; 
+    }
+    p, date, mark{
+        font-size: $base-font;
+    }
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a{
+                    padding: 20px;
+                    color: black;
+                    text-decoration: none;
+                    &:hover{
+                        color: blue;
+                        border-bottom: 3px blue solid;
+                        text-decoration: none;
+                    }
+                }        
+            }
+        }
+
+    }
+    header{
+        display: flex;
+        position: relative; // 加上 relative，使 .float 的絕對定位以此為基準
+        
+        img {
+            max-width: 50%;
+        }
+
+        .right {
+            position: relative;
+            width: 50%;
+            padding-left: 20px;
+            justify-content: center;
+            align-content: center;
+            color: blue;
+            z-index: 1;
+        }
+
+        .float {
+            position: absolute; // 讓它覆蓋在上面
+            top: 80%;
+            left: 35%;
+            float: right;
+            padding: 50px 50px 25px 25px;
+            border: black 3px solid;
+            background: white;
+            z-index: 2;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                li{
+                    a{
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+                        justify-content: center;
+                        
+                        &:hover{
+                            border: 1px blue solid;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    main{
+        .services{
+            display: block;
+            position: relative;
+            .service{
+                display: flex;
+                flex-wrap: wrap;
+                img{
+                    position: relative;
+                    max-width: 40%;
+                }
+                .textbox{
+                    max-width: 40%;
+                    left: 28%;
+                    float: right;
+                    position: absolute; 
+                    border: black 3px solid;
+                    background: white;
+                }
+            }
+            .more{
+                padding: 20px;
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                button{
+                    border: 1px solid black;
+                    background: white;
+                    border-radius: 50%;
+                    max-width: 5%;
+                    &:hover{
+                        background: rgb(128,128,255);
+                    }
+                }
+            }
+        }
+        .blogs{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center; 
+
+            .btn_dir{
+                background: rgb(0,0,255);
+                color: white;
+                border-radius: 50%;
+                max-width: 8%;
+                height: $base-font*1.5;
+                &:hover{
+                    background: rgb(128,128,255);
+                }
+            }
+            .box{
+                padding: 10px;
+                max-width: 28%;
+                .mark .btn_highlight .blog_highlight{
+                    border-radius: 10px;
+                    border-color: blue;
+                    background: blue;
+                    color: white; 
+                }
+                
+                img{
+                    text-align: center;
+                }
+                .btn_more{
+                    border: black 2px solid;
+                    background: white;
+                    padding: 10px;
+                    border-radius: 20px;
+                    &:hover{
+                        background: rgb(128,128,255);
+                    }
+                }
+                
+                
+            }
+        }
+        .pic_textbox{
+            position: absolute;
+            max-width: 100%;
+            height: 532.49px;
+            padding: 10px;
+            .pic{
+                max-width: 50%;
+                height: 532.49px;
+                position: relative;
+                z-index: 1;
+            }
+            .textbox1{
+                padding: 20px;
+                border: 3px black solid;
+                position: relative;
+                top: -500px;
+                left: 40%;
+                background: white;
+                z-index: 2;
+                max-width: 50%;
+                p span{
+                    color:blue;
+                } 
+            }
+            .textbox2{
+                padding: 20px;
+                border: 3px black solid;
+                background: white;
+                position: relative;
+                top: -300px;
+                left: 40%;
+                z-index: 3;
+                max-width: 50%;
+                button{
+                    border: blue 2px solid;
+                    background: white;
+                    color: blue;
+                    padding: 10px;
+                    border-radius: 20px;
+                    &:hover{
+                        background: rgb(128,128,255);
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
