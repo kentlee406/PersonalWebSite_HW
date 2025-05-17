@@ -2,6 +2,7 @@
 body{
     line-height: 1.8;
     font-family: Tahoma;
+    padding: 50px;
     h1{
         font-size: $base-font*3;
         font-weight: bold;
@@ -17,6 +18,15 @@ body{
     }
     p, date, mark{
         font-size: $base-font;
+    }
+    .btn_more{
+        border: black 2px solid;
+        background: white;
+        padding: 10px;
+        border-radius: 20px;
+        &:hover{
+            background: rgb(128,128,255);
+        }
     }
     nav{
         ul{
@@ -57,6 +67,7 @@ body{
             align-content: center;
             color: blue;
             z-index: 1;
+            background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
         }
 
         .float {
@@ -152,27 +163,18 @@ body{
                 img{
                     text-align: center;
                 }
-                .btn_more{
-                    border: black 2px solid;
-                    background: white;
-                    padding: 10px;
-                    border-radius: 20px;
-                    &:hover{
-                        background: rgb(128,128,255);
-                    }
-                }
+                
                 
                 
             }
         }
         .pic_textbox{
-            position: absolute;
-            max-width: 100%;
-            height: 532.49px;
+            position: relative;
+            width: 100%;
+            height: 594.49px;
             padding: 10px;
             .pic{
                 max-width: 50%;
-                height: 532.49px;
                 position: relative;
                 z-index: 1;
             }
@@ -208,6 +210,22 @@ body{
                         background: rgb(128,128,255);
                     }
                 }
+            }
+        }
+        .podcasts{
+            display: flex;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            .podcast{
+                padding: 10px;
+                ul li:before {
+                    content: "\2611\0020";
+                    background: blue;
+                    color: white;
+                }
+
             }
         }
         
