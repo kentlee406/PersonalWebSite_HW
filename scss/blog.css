@@ -68,6 +68,7 @@ body {
   font-family: Tahoma;
   padding-left: 5%;
   padding-right: 5%;
+  background-color: rgb(246, 246, 246);
 }
 body h1 {
   font-size: 48px;
@@ -162,6 +163,34 @@ body main .items {
 body main .items .item {
   width: 33%;
 }
+body main .pages {
+  display: flex;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px auto;
+  justify-content: center;
+  border-radius: 30px;
+  background: white;
+}
+body main .pages button {
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  background: white;
+  color: black;
+}
+body main .pages button:hover {
+  text-decoration: underline;
+}
+body main .pages button:active {
+  color: blue;
+  font-weight: bold;
+}
+body main .pages .thisPage {
+  color: blue;
+  font-weight: bold;
+}
 body footer {
   margin-top: 5px;
   border-top: 3px black solid;
@@ -181,4 +210,26 @@ body footer ul li a:hover {
 body footer p.copyright {
   font-size: 12px;
   text-align: center;
+}
+
+/* 手機板型 */
+@media (max-width: 767px) {
+  body header img {
+    max-width: 100%;
+  }
+  body header .right {
+    width: 100%;
+  }
+  body .top_blog .img {
+    max-width: 100%;
+  }
+  body .top_blog .content {
+    max-width: 100%;
+  }
+  body main .items .item {
+    width: 100%;
+  }
+  body footer p.email, body footer ul {
+    display: none;
+  }
 }/*# sourceMappingURL=blog.css.map */

@@ -67,6 +67,7 @@ body {
   font-family: Tahoma;
   padding-left: 20%;
   padding-right: 20%;
+  background-color: rgb(246, 246, 246);
 }
 body h1 {
   font-size: 48px;
@@ -176,4 +177,21 @@ body footer ul li a:hover {
 body footer p.copyright {
   font-size: 12px;
   text-align: center;
+}
+
+/* 手機板型 */
+@media (max-width: 767px) {
+  body {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  body .top_blog .img {
+    width: 100%;
+  }
+  body .top_blog .content {
+    max-width: 100%;
+  }
+  body footer p.email, body footer ul {
+    display: none;
+  }
 }/*# sourceMappingURL=blog_content.css.map */

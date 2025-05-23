@@ -1,0 +1,35 @@
+/* 手機板型 */
+@media(max-width: 767px){
+    body{
+        
+        header{
+            img {
+                max-width: 100%;
+            }
+            .right {
+                width: 100%;
+            }
+        }
+        .top_blog{
+            .img {
+                max-width: 100%;
+            }
+            .content{
+                max-width: 100%;
+            }
+        }
+        main{
+            .items .item{
+                width: 100%;
+            }
+        }
+        footer{
+            p.email, ul{
+                display: none;
+            }
+            
+                
+        }
+    }
+    
+}
