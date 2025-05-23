@@ -182,8 +182,8 @@ body footer p.copyright {
 /* 手機板型 */
 @media (max-width: 767px) {
   body {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
   body .top_blog .img {
     width: 100%;
