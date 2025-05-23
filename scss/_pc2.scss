@@ -2,6 +2,8 @@
 body{
     line-height: 1.8;
     font-family: Tahoma;
+    padding-left: 5%;
+    padding-right: 5%;
     h1{
         font-size: $base-font*3;
         font-weight: bold;
@@ -17,6 +19,19 @@ body{
     }
     p, date{
         font-size: $base-font;
+    }
+    .btn_more{
+        border: black 2px solid;
+        background: white;
+        padding: 10px;
+        border-radius: 20px;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        &:hover{
+            background: rgb(128,128,255);
+        }
     }
     nav{
         ul{
@@ -43,10 +58,11 @@ body{
     }
     header{
         display: flex;
+        flex-wrap: wrap;
         position: relative; // 加上 relative，使 .float 的絕對定位以此為基準
         
         img {
-            max-width: 50%;
+            max-width: 45%;
         }
 
         .right {
@@ -59,5 +75,60 @@ body{
             z-index: 1;
             background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
         }
+
+        
     }
+    .top_blog{
+        display: flex;
+        flex-wrap: wrap;
+        .img{
+            max-width: 45%;
+        }
+        .content{
+            max-width: 50%;
+            padding: 10px;
+            .mark .btn_highlight .blog_highlight{
+                border-radius: 10px;
+                border-color: blue;
+                background: blue;
+                color: white; 
+            }
+            
+        }
+    }
+
+    main{
+        .items{
+            display: flex;
+            align-content: center;
+            justify-content: normal;
+            flex-wrap: wrap;
+            align-items: center;
+            .item{
+                width: 33%;
+            }
+        }
+    }
+    footer{
+        margin-top: 5px;
+        border-top: 3px black solid;
+        p.email{
+            font-size: $base-font*1.5;
+        }
+        ul{
+            display: flex;
+            float: right;
+            top: -40px;
+            position: relative;
+            li a:hover{
+                border: black 1px solid;
+            }
+        }
+        p.copyright{
+            font-size: $base-font*0.75;
+            text-align: center;
+
+        }
+    }
+
 }

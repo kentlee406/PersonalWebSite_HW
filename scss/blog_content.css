@@ -60,4 +60,120 @@ img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+body {
+  line-height: 1.8;
+  font-family: Tahoma;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+body h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+body h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: blue;
+}
+body h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+body p, body date {
+  font-size: 16px;
+}
+body span {
+  font-size: 16px;
+  color: blue;
+}
+body ol {
+  list-style-type: decimal;
+  padding-left: 1em;
+}
+body ul {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+body nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body nav ul li a {
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+}
+body nav ul li a:hover {
+  color: blue;
+  border-bottom: 3px blue solid;
+  text-decoration: none;
+}
+body .top_blog {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .top_blog .img {
+  width: 30%;
+  height: auto;
+}
+body .top_blog .content {
+  max-width: 50%;
+  padding: 10px;
+}
+body .top_blog .content .mark .btn_highlight .blog_highlight {
+  border-radius: 10px;
+  border-color: blue;
+  background: blue;
+  color: white;
+}
+body main img {
+  width: 100%;
+}
+body main .block {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(222, 222, 222);
+  margin: 10px;
+}
+body main .prevNext {
+  display: flex;
+  justify-content: space-between;
+}
+body main .prevNext button {
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 10px;
+  background: white;
+}
+body main .prevNext button:hover {
+  background: rgb(128, 128, 255);
+}
+body footer {
+  margin-top: 5px;
+  border-top: 3px black solid;
+}
+body footer p.email {
+  font-size: 24px;
+}
+body footer ul {
+  display: flex;
+  float: right;
+  top: -40px;
+  position: relative;
+  list-style-type: none;
+}
+body footer ul li a:hover {
+  border: black 1px solid;
+}
+body footer p.copyright {
+  font-size: 12px;
+  text-align: center;
 }/*# sourceMappingURL=blog_content.css.map */

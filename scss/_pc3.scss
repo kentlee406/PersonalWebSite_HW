@@ -1,0 +1,124 @@
+body{
+    line-height: 1.8;
+    font-family: Tahoma;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    h1{
+        font-size: $base-font*3;
+        font-weight: bold;
+        
+    }
+    h2{
+        font-size: $base-font*2.5;
+        font-weight: bold;
+        color: blue; 
+    }
+    h3{
+        font-size: $base-font*2;
+        font-weight: bold; 
+    }
+    p, date{
+        font-size: $base-font;
+    }
+    span{
+        font-size: $base-font;
+        color: blue;
+    }
+    ol{
+        list-style-type: decimal;
+        padding-left: 1em;
+    }
+    ul{
+        list-style-type: disc;
+        padding-left: 1em;
+    }
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a{
+                    padding: 20px;
+                    color: black;
+                    text-decoration: none;
+                    &:hover{
+                        color: blue;
+                        border-bottom: 3px blue solid;
+                        text-decoration: none;
+                    }
+                }        
+            }
+        }
+
+    }
+    .top_blog{
+        display: flex;
+        flex-wrap: wrap;
+        .img{
+            width: 30%;
+            height: auto;
+        }
+        .content{
+            max-width: 50%;
+            padding: 10px;
+            .mark .btn_highlight .blog_highlight{
+                border-radius: 10px;
+                border-color: blue;
+                background: blue;
+                color: white; 
+            }
+            
+        }
+    }
+    main{
+        img{
+            width: 100%;
+        }
+        .block{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(222,222,222);
+            margin: 10px;
+        }
+        .prevNext{
+            display: flex;
+            justify-content: space-between;
+            button{
+                border: 1px black solid;
+                border-radius: 20px;
+                padding: 10px;
+                background: white;
+                &:hover{
+                    background: rgb(128,128,255);
+                }
+            }
+        }
+    }
+    footer{
+        margin-top: 5px;
+        border-top: 3px black solid;
+        p.email{
+            font-size: $base-font*1.5;
+        }
+        ul{
+            display: flex;
+            float: right;
+            top: -40px;
+            position: relative;
+            list-style-type: none;
+            li a:hover{
+                border: black 1px solid;
+            }
+        }
+        p.copyright{
+            font-size: $base-font*0.75;
+            text-align: center;
+        }
+        
+    }
+}

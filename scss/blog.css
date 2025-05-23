@@ -66,6 +66,8 @@ img {
 body {
   line-height: 1.8;
   font-family: Tahoma;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 body h1 {
   font-size: 48px;
@@ -81,6 +83,19 @@ body h3 {
 }
 body p, body date {
   font-size: 16px;
+}
+body .btn_more {
+  border: black 2px solid;
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+body .btn_more a {
+  color: black;
+  text-decoration: none;
+}
+body .btn_more:hover {
+  background: rgb(128, 128, 255);
 }
 body nav ul {
   display: flex;
@@ -104,10 +119,11 @@ body nav ul li a:hover {
 }
 body header {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
 }
 body header img {
-  max-width: 50%;
+  max-width: 45%;
 }
 body header .right {
   position: relative;
@@ -118,4 +134,51 @@ body header .right {
   color: blue;
   z-index: 1;
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+}
+body .top_blog {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .top_blog .img {
+  max-width: 45%;
+}
+body .top_blog .content {
+  max-width: 50%;
+  padding: 10px;
+}
+body .top_blog .content .mark .btn_highlight .blog_highlight {
+  border-radius: 10px;
+  border-color: blue;
+  background: blue;
+  color: white;
+}
+body main .items {
+  display: flex;
+  align-content: center;
+  justify-content: normal;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body main .items .item {
+  width: 33%;
+}
+body footer {
+  margin-top: 5px;
+  border-top: 3px black solid;
+}
+body footer p.email {
+  font-size: 24px;
+}
+body footer ul {
+  display: flex;
+  float: right;
+  top: -40px;
+  position: relative;
+}
+body footer ul li a:hover {
+  border: black 1px solid;
+}
+body footer p.copyright {
+  font-size: 12px;
+  text-align: center;
 }/*# sourceMappingURL=blog.css.map */

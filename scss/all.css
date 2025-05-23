@@ -66,8 +66,8 @@ img {
 body {
   line-height: 1.8;
   font-family: Tahoma;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 body h1 {
   font-size: 48px;
@@ -81,8 +81,11 @@ body h3 {
   font-size: 32px;
   font-weight: bold;
 }
-body p, body date, body mark {
+body p, body date {
   font-size: 16px;
+}
+body span {
+  color: blue;
 }
 body .btn_more {
   border: black 2px solid;
@@ -128,10 +131,11 @@ body header .right {
   align-content: center;
   color: blue;
   z-index: 1;
-  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+  background-image: url("/img/desktop/index/Hero Section2.png");
 }
 body header .float {
   position: absolute;
+  flex-basis: 100%; /* 讓它佔一整行 */
   top: 80%;
   left: 35%;
   float: right;
@@ -239,9 +243,6 @@ body main .pic_textbox .textbox1 {
   z-index: 2;
   max-width: 50%;
 }
-body main .pic_textbox .textbox1 p span {
-  color: blue;
-}
 body main .pic_textbox .textbox2 {
   padding: 20px;
   border: 3px black solid;
@@ -271,11 +272,54 @@ body main .podcasts {
 }
 body main .podcasts .podcast {
   padding: 10px;
+  width: 25%;
 }
 body main .podcasts .podcast ul li:before {
   content: "☑ ";
   background: blue;
   color: white;
+}
+body footer {
+  margin-top: 5px;
+  border-top: 3px black solid;
+}
+body footer .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer .img img {
+  width: 50%;
+}
+body footer .textbox {
+  position: relative;
+  top: -600px;
+  left: 55%;
+  padding: 5%;
+  width: 30%;
+  background: white;
+}
+body footer .textbox input[type=text] {
+  width: 70%;
+  font-size: 16px;
+}
+body footer .textbox button {
+  border: blue 2px solid;
+  background: white;
+  color: blue;
+  padding: 10px;
+  border-radius: 20px;
+}
+body footer .textbox button:hover {
+  background: rgb(128, 128, 255);
+}
+body footer .contact {
+  position: relative;
+  top: -400px;
+}
+body footer p.copyright {
+  font-size: 12px;
+  text-align: center;
 }
 
 /* 手機板型 *//*# sourceMappingURL=all.css.map */

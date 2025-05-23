@@ -2,8 +2,8 @@
 body{
     line-height: 1.8;
     font-family: Tahoma;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
     h1{
         font-size: $base-font*3;
         font-weight: bold;
@@ -17,8 +17,11 @@ body{
         font-size: $base-font*2;
         font-weight: bold; 
     }
-    p, date, mark{
+    p, date{
         font-size: $base-font;
+    }
+    span{
+        color: blue;
     }
     .btn_more{
         border: black 2px solid;
@@ -68,11 +71,12 @@ body{
             align-content: center;
             color: blue;
             z-index: 1;
-            background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+            background-image: url("/img/desktop/index/Hero\ Section2.png");
         }
 
         .float {
             position: absolute; // 讓它覆蓋在上面
+            flex-basis: 100%; /* 讓它佔一整行 */
             top: 80%;
             left: 35%;
             float: right;
@@ -188,9 +192,6 @@ body{
                 background: white;
                 z-index: 2;
                 max-width: 50%;
-                p span{
-                    color:blue;
-                } 
             }
             .textbox2{
                 padding: 20px;
@@ -221,6 +222,7 @@ body{
             align-items: center;
             .podcast{
                 padding: 10px;
+                width: 25%;
                 ul li:before {
                     content: "\2611\0020";
                     background: blue;
@@ -231,5 +233,50 @@ body{
         }
         
 
+    }
+    footer{
+        margin-top: 5px;
+        border-top: 3px black solid;
+        .img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 50%;
+            }
+        }
+        .textbox{
+            position: relative;
+            top: -600px;
+            left: 55%;
+            padding: 5%;
+            width: 30%;
+            background: white;
+            input[type=text]{
+                width: 70%;
+                font-size: $base-font;
+            }
+            button{
+                border: blue 2px solid;
+                background: white;
+                color: blue;
+                padding: 10px;
+                border-radius: 20px;
+                &:hover{
+                    background: rgb(128,128,255);
+                }
+            }
+            
+        }
+        .contact{
+            position: relative;
+            top: -400px;
+            
+        }
+        p.copyright{
+            font-size: $base-font*0.75;
+            text-align: center;
+        }
+        
     }
 }
