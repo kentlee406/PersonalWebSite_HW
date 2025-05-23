@@ -108,6 +108,10 @@ body{
             align-items: center;
             .item{
                 width: 33%;
+                p.mark{
+                    font-size: $base-font*1.5;
+                    color: blue;
+                }
             }
         }
         .pages{

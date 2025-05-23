@@ -164,6 +164,10 @@ body main .items {
 body main .items .item {
   width: 33%;
 }
+body main .items .item p.mark {
+  font-size: 24px;
+  color: blue;
+}
 body main .pages {
   display: flex;
   flex-wrap: wrap;
