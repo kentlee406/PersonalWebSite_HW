@@ -1,4 +1,65 @@
 /* 手機板型 */
 @media(max-width: 767px){
-    
+    body{
+        header{
+            .leftRight{
+                flex-direction: column;
+                img, .right{
+                    max-width: 100%;
+                }
+            }
+            .float{
+                position: static;
+                width: 85%;
+            }
+        }
+        main{
+            .services .service{
+                img{
+                    max-width: 100%;
+                }
+                .textbox{
+                    position: static;
+                    max-width: 100%;
+                }
+            }
+            .blogs{
+                .box{
+                    max-width: 100%;
+                }
+                .boxRemove{
+                    display: none;
+                }
+            }
+            .pic_textbox{
+                .pic{
+                    max-width: 100%;
+                }
+                .textbox{
+                    position: static;
+                    max-width: 100%;
+                }
+            }
+            .podcasts{
+                flex-direction: column;
+                .podcast{
+                    width: 100%;
+                }
+            } 
+            
+        }
+        footer{
+            .img{
+                flex-direction: column;
+                flex-wrap: wrap;
+                img{
+                    width: 100%;
+                }
+            }
+            .textbox{
+                position: static;
+                width: 100%;
+            }
+        }
+    }
 }

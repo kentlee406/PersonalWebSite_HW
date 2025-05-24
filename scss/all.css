@@ -117,33 +117,28 @@ body nav ul li a:hover {
   border-bottom: 3px blue solid;
   text-decoration: none;
 }
-body header {
+body header .leftRight {
   display: flex;
-  position: relative;
 }
-body header img {
+body header .leftRight img {
   max-width: 50%;
 }
-body header .right {
-  position: relative;
+body header .leftRight .right {
   width: 50%;
   padding-left: 20px;
   justify-content: center;
   align-content: center;
   color: blue;
-  z-index: 1;
   background-image: url("/img/desktop/index/Hero Section2.png");
 }
 body header .float {
-  position: absolute;
-  flex-basis: 100%; /* 讓它佔一整行 */
-  top: 80%;
-  left: 35%;
-  float: right;
+  position: relative;
+  top: -35px;
+  left: 45%;
+  width: 35%;
   padding: 50px 50px 25px 25px;
   border: black 3px solid;
   background: white;
-  z-index: 2;
 }
 body header .float ul {
   display: flex;
@@ -161,21 +156,15 @@ body header .float ul li a:hover {
 }
 body main .services {
   display: block;
-  position: relative;
-}
-body main .services .service {
-  display: flex;
-  flex-wrap: wrap;
 }
 body main .services .service img {
-  position: relative;
   max-width: 40%;
 }
-body main .services .service .textbox {
+body main .services .textbox {
   max-width: 40%;
   left: 28%;
-  float: right;
-  position: absolute;
+  top: -30px;
+  position: relative;
   border: black 3px solid;
   background: white;
 }
@@ -224,33 +213,28 @@ body main .blogs .box img {
   text-align: center;
 }
 body main .pic_textbox {
-  position: relative;
-  width: 100%;
-  height: 594.49px;
   padding: 10px;
 }
 body main .pic_textbox .pic {
   max-width: 50%;
-  position: relative;
   z-index: 1;
 }
-body main .pic_textbox .textbox1 {
+body main .pic_textbox .textbox {
   padding: 20px;
   border: 3px black solid;
+  background: white;
   position: relative;
-  top: -500px;
-  left: 40%;
+}
+body main .pic_textbox .textbox1 {
+  top: -400px;
+  left: 25%;
   background: white;
   z-index: 2;
   max-width: 50%;
 }
 body main .pic_textbox .textbox2 {
-  padding: 20px;
-  border: 3px black solid;
-  background: white;
-  position: relative;
-  top: -300px;
-  left: 40%;
+  top: -350px;
+  left: 28%;
   z-index: 3;
   max-width: 50%;
 }
@@ -294,7 +278,7 @@ body footer .img img {
 }
 body footer .textbox {
   position: relative;
-  top: -600px;
+  top: -330px;
   left: 55%;
   padding: 5%;
   width: 30%;
@@ -314,13 +298,82 @@ body footer .textbox button {
 body footer .textbox button:hover {
   background: rgb(128, 128, 255);
 }
-body footer .contact {
+body footer ul li {
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+  height: 50px;
+  width: 100%;
+}
+body footer ul li img {
+  height: 30px;
+  width: 30px;
+}
+body footer ul li a {
+  font-size: 19.2px;
+  margin: 0px auto;
+  text-decoration: none;
+  color: black;
+}
+body footer ul li a:hover {
+  color: blue;
+}
+body footer ul li .go {
   position: relative;
-  top: -400px;
+  float: right;
 }
 body footer p.copyright {
+  padding-top: 10px;
   font-size: 12px;
   text-align: center;
 }
 
-/* 手機板型 *//*# sourceMappingURL=all.css.map */
+/* 手機板型 */
+@media (max-width: 767px) {
+  body header .leftRight {
+    flex-direction: column;
+  }
+  body header .leftRight img, body header .leftRight .right {
+    max-width: 100%;
+  }
+  body header .float {
+    position: static;
+    width: 85%;
+  }
+  body main .services .service img {
+    max-width: 100%;
+  }
+  body main .services .service .textbox {
+    position: static;
+    max-width: 100%;
+  }
+  body main .blogs .box {
+    max-width: 100%;
+  }
+  body main .blogs .boxRemove {
+    display: none;
+  }
+  body main .pic_textbox .pic {
+    max-width: 100%;
+  }
+  body main .pic_textbox .textbox {
+    position: static;
+    max-width: 100%;
+  }
+  body main .podcasts {
+    flex-direction: column;
+  }
+  body main .podcasts .podcast {
+    width: 100%;
+  }
+  body footer .img {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body footer .img img {
+    width: 100%;
+  }
+  body footer .textbox {
+    position: static;
+    width: 100%;
+  }
+}/*# sourceMappingURL=all.css.map */

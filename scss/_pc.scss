@@ -57,34 +57,31 @@ body{
 
     }
     header{
-        display: flex;
-        position: relative; // 加上 relative，使 .float 的絕對定位以此為基準
-        
-        img {
-            max-width: 50%;
-        }
+        .leftRight{
+            display: flex;
+            img {
+                max-width: 50%;
+            }
 
-        .right {
-            position: relative;
-            width: 50%;
-            padding-left: 20px;
-            justify-content: center;
-            align-content: center;
-            color: blue;
-            z-index: 1;
-            background-image: url("/img/desktop/index/Hero\ Section2.png");
+            .right {
+                width: 50%;
+                padding-left: 20px;
+                justify-content: center;
+                align-content: center;
+                color: blue;
+                background-image: url("/img/desktop/index/Hero\ Section2.png");
+            }
         }
+        
 
         .float {
-            position: absolute; // 讓它覆蓋在上面
-            flex-basis: 100%; /* 讓它佔一整行 */
-            top: 80%;
-            left: 35%;
-            float: right;
+            position: relative;
+            top: -35px;
+            left: 45%;
+            width: 35%;
             padding: 50px 50px 25px 25px;
             border: black 3px solid;
             background: white;
-            z-index: 2;
             ul {
                 display: flex;
                 flex-wrap: wrap;
@@ -107,22 +104,19 @@ body{
     main{
         .services{
             display: block;
-            position: relative;
             .service{
-                display: flex;
-                flex-wrap: wrap;
                 img{
-                    position: relative;
                     max-width: 40%;
                 }
-                .textbox{
-                    max-width: 40%;
-                    left: 28%;
-                    float: right;
-                    position: absolute; 
-                    border: black 3px solid;
-                    background: white;
-                }
+                
+            }
+            .textbox{
+                max-width: 40%;
+                left: 28%;
+                top: -30px;
+                position: relative; 
+                border: black 3px solid;
+                background: white;
             }
             .more{
                 padding: 20px;
@@ -175,32 +169,27 @@ body{
             }
         }
         .pic_textbox{
-            position: relative;
-            width: 100%;
-            height: 594.49px;
             padding: 10px;
             .pic{
                 max-width: 50%;
-                position: relative;
                 z-index: 1;
             }
-            .textbox1{
+            .textbox{
                 padding: 20px;
                 border: 3px black solid;
+                background: white;
                 position: relative;
-                top: -500px;
-                left: 40%;
+            }
+            .textbox1{
+                top: -400px;
+                left: 25%;
                 background: white;
                 z-index: 2;
                 max-width: 50%;
             }
             .textbox2{
-                padding: 20px;
-                border: 3px black solid;
-                background: white;
-                position: relative;
-                top: -300px;
-                left: 40%;
+                top: -350px;
+                left: 28%;
                 z-index: 3;
                 max-width: 50%;
                 button{
@@ -248,7 +237,7 @@ body{
         }
         .textbox{
             position: relative;
-            top: -600px;
+            top: -330px;
             left: 55%;
             padding: 5%;
             width: 30%;
@@ -269,12 +258,33 @@ body{
             }
             
         }
-        .contact{
-            position: relative;
-            top: -400px;
-            
+        ul {
+            li{
+                border-top: black 1px solid;
+                border-bottom: black 1px solid;
+                height: 50px;
+                width: 100%;
+                img{
+                    height: 30px;
+                    width: 30px;
+                }
+                a{
+                    font-size: $base-font*1.2;
+                    margin: 0px auto;
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: blue;
+                    }
+                }
+                .go{
+                    position: relative;
+                    float: right;
+                }
+            }
         }
         p.copyright{
+            padding-top: 10px;
             font-size: $base-font*0.75;
             text-align: center;
         }
