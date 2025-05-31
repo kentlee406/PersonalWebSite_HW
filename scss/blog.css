@@ -186,10 +186,11 @@ body main .pages button {
   color: black;
 }
 body main .pages button:hover {
-  text-decoration: underline;
+  cursor: pointer;
 }
 body main .pages button:active {
   color: blue;
+  transform: scale(1.2);
   font-weight: bold;
 }
 body main .pages .thisPage {

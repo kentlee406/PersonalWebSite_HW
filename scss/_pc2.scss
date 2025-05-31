@@ -129,10 +129,11 @@ body{
                 background: white;
                 color: black;
                 &:hover{
-                    text-decoration: underline;
+                    cursor:pointer;
                 }
                 &:active{
                     color: blue;
+                    transform: scale(1.2);
                     font-weight: bold;
                 }
             }
