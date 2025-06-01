@@ -117,6 +117,9 @@ body nav ul li a:hover {
   border-bottom: 3px blue solid;
   text-decoration: none;
 }
+body header {
+  height: 100vh;
+}
 body header .leftRight {
   display: flex;
 }
