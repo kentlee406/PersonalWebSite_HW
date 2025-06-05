@@ -1,8 +1,11 @@
 body{
-    line-height: 1.8;
-    font-family: Tahoma;
-    padding-left: 20%;
-    padding-right: 20%;
+    line-height: 1.5;
+    font-family: Noto Sans TC;
+    main, footer, .top_blog{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
     background-color: $page-background;
     h1{
         font-size: $base-font*3;
@@ -18,11 +21,7 @@ body{
         font-size: $base-font*2;
         font-weight: bold; 
     }
-    p, date{
-        font-size: $base-font;
-    }
     span{
-        font-size: $base-font;
         color: blue;
     }
     ol{

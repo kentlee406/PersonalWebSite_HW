@@ -2,23 +2,24 @@
 @media(max-width: 767px){
     body{
         header{
-            .leftRight{
+            .main{
                 flex-direction: column;
-                img, .right{
+                img, .title{
                     max-width: 100%;
                 }
             }
             .float{
                 position: static;
-                width: 85%;
+                max-width: 100%;
             }
         }
         main{
             .services .service{
                 flex-direction: column;
-                .text-box{
-                    margin: 10%;
-                    width: 100%;
+                .text-box .text-card{
+                    position: static;
+                    margin: 0px;
+                    max-width: 100%;
                 }
             }
             .blogs{
@@ -32,36 +33,40 @@
             .main-content{
                 flex-direction: column;
                 .image-box img{
-                    width: 100%;
+                    max-width: 100%;
                 }
-                .text-box .text-card{
-                    width: 150%;
-                    margin: 0%;
+                .text-box{
+                    max-width: 100%;
+                    margin: 0px;
+                    .text-card{
+                        margin: 0px;
+                    }
                 }
-                .text-box .text-card-bottom{
-                    width: 150%;
-                    margin: 0%;
-                }
+                
+                
             }
             .podcasts{
                 flex-direction: column;
                 .podcast{
                     width: 100%;
                 }
-            } 
+            }
+            
             
         }
         footer{
             .img{
+                display: flex;
                 flex-direction: column;
-                flex-wrap: wrap;
                 img{
-                    width: 100%;
+                    max-width: 100%;
                 }
             }
             .textbox{
-                position: static;
-                width: 100%;
+                position: relative;
+                top: -200px;
+                left: 0%;
+                max-width: 100%;
             }
         }
     }

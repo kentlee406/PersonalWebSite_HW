@@ -1,10 +1,12 @@
 /*先寫PC版型 */
 body{
-    line-height: 1.8;
-    font-family: Tahoma;
-    padding-left: 5%;
-    padding-right: 5%;
+    line-height: 1.5;
+    font-family: Noto Sans TC;
     background-color: $page-background;
+    header, main, footer, .top_blog{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     h1{
         font-size: $base-font*3;
         font-weight: bold;
@@ -17,9 +19,6 @@ body{
     h3{
         font-size: $base-font*2;
         font-weight: bold; 
-    }
-    p, date{
-        font-size: $base-font;
     }
     .btn_more{
         border: black 2px solid;
@@ -67,7 +66,7 @@ body{
             max-width: 45%;
         }
 
-        .right {
+        .title {
             position: relative;
             width: 50%;
             padding-left: 20px;
@@ -147,7 +146,7 @@ body{
     footer{
         margin-top: 5px;
         border-top: 3px black solid;
-        p.email{
+        .email{
             font-size: $base-font*1.5;
         }
         ul{

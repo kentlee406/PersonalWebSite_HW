@@ -64,11 +64,13 @@ img {
 
 /*先寫PC版型 */
 body {
-  line-height: 1.8;
-  font-family: Tahoma;
+  line-height: 1.5;
+  font-family: Noto Sans TC;
+  background-color: rgb(246, 246, 246);
+}
+body main, body .nofull {
   padding-left: 5%;
   padding-right: 5%;
-  background-color: rgb(246, 246, 246);
 }
 body h1 {
   font-size: 48px;
@@ -81,9 +83,6 @@ body h2 {
 body h3 {
   font-size: 32px;
   font-weight: bold;
-}
-body p, body date {
-  font-size: 16px;
 }
 body span {
   color: blue;
@@ -118,15 +117,15 @@ body nav ul li a:hover {
   text-decoration: none;
 }
 body header {
-  height: 100vh;
+  max-height: 100vh;
 }
-body header .leftRight {
+body header .main {
   display: flex;
 }
-body header .leftRight img {
-  max-width: 50%;
+body header .main img {
+  width: 50%;
 }
-body header .leftRight .right {
+body header .main .title {
   width: 50%;
   padding-left: 20px;
   justify-content: center;
@@ -136,9 +135,9 @@ body header .leftRight .right {
 }
 body header .float {
   position: relative;
-  top: -35px;
+  top: -150px;
   left: 45%;
-  width: 35%;
+  max-width: 35%;
   padding: 50px 50px 25px 25px;
   border: black 3px solid;
   background: white;
@@ -163,7 +162,7 @@ body main .services .service {
   margin-bottom: 50px;
 }
 body main .services .service .image-box img {
-  width: 100%;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 400px;
@@ -190,6 +189,13 @@ body main .services .service .text-box .text-card h3:before {
   display: block;
   position: relative;
   bottom: 20px;
+}
+body main .services .service-even {
+  flex-direction: row-reverse;
+}
+body main .services .service-even .text-box .text-card {
+  margin-left: 40%; /* 桌面板改這裡 */
+  z-index: 2;
 }
 body main .services .more {
   padding: 20px;
@@ -241,21 +247,20 @@ body main .main-content {
   margin-bottom: 50px;
 }
 body main .main-content .image-box img {
-  width: 100%;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 body main .main-content .text-box {
-  flex: 1 1 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 100px;
-  width: 45%;
+  gap: 50px;
+  max-width: 45%;
 }
 body main .main-content .text-box p:before {
   content: "";
-  width: 25px;
+  max-width: 25px;
   height: 2px;
   background-color: blue;
   display: block;
@@ -269,7 +274,7 @@ body main .main-content .text-box .text-card {
   margin: -10%; /* 桌面板改這裡 */
 }
 body main .main-content .text-box .text-card-bottom {
-  background-color: white;
+  background-color: #FBFBFB;
   padding: 60px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
@@ -297,6 +302,7 @@ body main .podcasts {
 body main .podcasts .podcast {
   padding: 10px;
   width: 25%;
+  background-color: #FBFBFB;
 }
 body main .podcasts .podcast ul li:before {
   content: "☑ ";
@@ -320,12 +326,11 @@ body footer .textbox {
   top: -380px;
   left: 55%;
   padding: 5%;
-  width: 30%;
+  max-width: 30%;
   background: white;
 }
-body footer .textbox input[type=text] {
+body footer .textbox input {
   width: 70%;
-  font-size: 16px;
 }
 body footer .textbox button {
   border: blue 2px solid;
@@ -368,22 +373,23 @@ body footer p.copyright {
 
 /* 手機板型 */
 @media (max-width: 767px) {
-  body header .leftRight {
+  body header .main {
     flex-direction: column;
   }
-  body header .leftRight img, body header .leftRight .right {
+  body header .main img, body header .main .title {
     max-width: 100%;
   }
   body header .float {
     position: static;
-    width: 85%;
+    max-width: 100%;
   }
   body main .services .service {
     flex-direction: column;
   }
-  body main .services .service .text-box {
-    margin: 10%;
-    width: 100%;
+  body main .services .service .text-box .text-card {
+    position: static;
+    margin: 0px;
+    max-width: 100%;
   }
   body main .blogs .box {
     max-width: 100%;
@@ -395,15 +401,14 @@ body footer p.copyright {
     flex-direction: column;
   }
   body main .main-content .image-box img {
-    width: 100%;
+    max-width: 100%;
+  }
+  body main .main-content .text-box {
+    max-width: 100%;
+    margin: 0px;
   }
   body main .main-content .text-box .text-card {
-    width: 150%;
-    margin: 0%;
-  }
-  body main .main-content .text-box .text-card-bottom {
-    width: 150%;
-    margin: 0%;
+    margin: 0px;
   }
   body main .podcasts {
     flex-direction: column;
@@ -412,14 +417,16 @@ body footer p.copyright {
     width: 100%;
   }
   body footer .img {
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
   }
   body footer .img img {
-    width: 100%;
+    max-width: 100%;
   }
   body footer .textbox {
-    position: static;
-    width: 100%;
+    position: relative;
+    top: -200px;
+    left: 0%;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=all.css.map */

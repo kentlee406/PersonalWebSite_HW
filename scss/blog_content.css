@@ -63,11 +63,13 @@ img {
 }
 
 body {
-  line-height: 1.8;
-  font-family: Tahoma;
-  padding-left: 20%;
-  padding-right: 20%;
+  line-height: 1.5;
+  font-family: Noto Sans TC;
   background-color: rgb(246, 246, 246);
+}
+body main, body footer, body .top_blog {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 body h1 {
   font-size: 48px;
@@ -82,11 +84,7 @@ body h3 {
   font-size: 32px;
   font-weight: bold;
 }
-body p, body date {
-  font-size: 16px;
-}
 body span {
-  font-size: 16px;
   color: blue;
 }
 body ol {
